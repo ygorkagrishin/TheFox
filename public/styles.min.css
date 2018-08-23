@@ -1,41 +1,33 @@
 @font-face {
-  font-family: 'lato';
-  font-style: 'black';
+  font-family: 'lato-black';
   src: url("fonts/lato/lato-black-webfont.woff"), url("fonts/lato/lato-black-webfont.woff2");
 }
 @font-face {
-  font-family: 'lato';
-  font-style: 'bold';
+  font-family: 'lato-bold';
   src: url("fonts/lato/lato-bold-webfont.woff"), url("fonts/lato/lato-bold-webfont.woff2");
 }
 @font-face {
-  font-family: 'lato';
-  font-style: 'regular';
+  font-family: 'lato-regular';
   src: url("fonts/lato/lato-regular-webfont.woff"), url("fonts/lato/lato-regular-webfont.woff2");
 }
 @font-face {
-  font-family: 'merriweather';
-  font-style: 'bolditalic';
+  font-family: 'merriweather-bolditalic';
   src: url("fonts/merriweather/merriweather-bolditalic-webfont.woff"), url("fonts/merriweather/merriweather-bolditalic-webfont.woff2");
 }
 @font-face {
-  font-family: 'merriweather';
-  font-style: 'bold';
+  font-family: 'merriweather-bold';
   src: url("fonts/merriweather/merriweather-bold-webfont.woff"), url("fonts/merriweather/merriweather-bold-webfont.woff2");
 }
 @font-face {
-  font-family: 'merriweather';
-  font-style: 'regular';
+  font-family: 'merriweather-regular';
   src: url("fonts/merriweather/merriweather-regular-webfont.woff"), url("fonts/merriweather/merriweather-regular-webfont.woff2");
 }
 @font-face {
-  font-family: 'montserrat';
-  font-style: 'bold';
+  font-family: 'montserrat-bold';
   src: url("fonts/montserrat/montserrat-bold-webfont.woff"), url("fonts/montserrat/montserrat-bold-webfont.woff2");
 }
 @font-face {
   font-family: 'futuraptbold';
-  font-style: 'bold';
   src: url("fonts/futuraptbold.woff"), url("fonts/futuraptbold.woff2");
 }
 /* ***************
