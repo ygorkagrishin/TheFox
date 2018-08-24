@@ -6,7 +6,24 @@
 
 @import 'layout/_layout.styl'
 
+.intro__list
+    display flex
+    justify-content space-between
+    padding 150px 0
 
+.intro__item
+    padding 0 30px
+    flex 1 0 270px
+    text-align center
+    &:not(:last-child)
+        margin-right 30px
+    h3
+        font 15px / 30px baseTitleFont
+        text-transform uppercase
+        color blackColor
+
+.intro__pic
+    margin-bottom 24px
 
 @import 'components/_header.styl'
 @import 'components/_nav.styl'

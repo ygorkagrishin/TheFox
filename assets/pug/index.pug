@@ -1,6 +1,55 @@
 extends layout/_layout
 
 block title
+    | TheFox
 
 block content 
-    
+    main.page__main
+        section.section.intro
+            h2.visually-hidden Intro
+
+            .container
+                ul.intro__list
+                    //- #1
+                    li.intro__item
+                        .intro__pic
+                            img(src="img/content/intro/awesome.png", alt="looks awesome pic")
+                        h3 Looks awesome
+                        p
+                            | Lorem ipsum dolor sit amet
+                            | Consectetur adipisicing elitsed do eiusmod tempor incidid
+                            | labore et dolore magna aliqua.
+                    //- #1 end
+
+                    //- #2
+                    li.intro__item
+                        .intro__pic
+                            img(src="img/content/intro/design.png", alt="great design pic")
+                        h3 Great design
+                        p
+                            | Lorem ipsum dolor sit amet
+                            | Consectetur adipisicing elitsed do eiusmod tempor incidid
+                            | labore et dolore magna aliqua.
+                    //- #2 end
+
+                    //- #3
+                    li.intro__item
+                        .intro__pic
+                            img(src="img/content/intro/freebie.png", alt="good freedie pic")
+                        h3 Good freebie
+                        p
+                            | Lorem ipsum dolor sit amet
+                            | Consectetur adipisicing elitsed do eiusmod tempor incidid
+                            | labore et dolore magna aliqua.
+                    //- #3 end
+
+                    //- #4
+                    li.intro__item
+                        .intro__pic
+                            img(src="img/content/intro/flexibility.png", alt="flexibility pic")
+                        h3 Flexibility
+                        p
+                            | Lorem ipsum dolor sit amet
+                            | Consectetur adipisicing elitsed do eiusmod tempor incidid
+                            | labore et dolore magna aliqua.
+                    //- #4 end
