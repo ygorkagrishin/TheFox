@@ -25,6 +25,94 @@
 .intro__pic
     margin-bottom 24px
 
+.news__inner
+    padding 152px 0 
+
+.news__header
+    max-width 680px
+    margin 0 auto
+    padding-bottom 100px
+    text-align center
+    img 
+        margin 40px 0
+
+.news__title
+    color blackColor
+    & + p 
+        color blackColor
+
+.news__rows
+    & > .news__row
+        display flex
+        &:not(:last-child)
+            margin-bottom 72px
+        & > .news__col
+            &:not(:last-child)
+                margin-right 30px
+
+.news__news
+    text-align center
+    cursor pointer
+    span 
+        font-size 12px
+        line-height 14px
+        text-transform uppercase
+    h3
+        margin-bottom 12px
+        font 18px / 31px baseTitleFont2
+        color blackColor
+//TODO: Незабыть перевести padding в проценты
+.news__pic
+    position relative
+    z-index $z-index9
+    margin-bottom 28px
+    padding-top 300px
+    & > img 
+        position absolute
+        top 0 
+        left 0
+        width 100%
+        height 100%
+        object-fit cover
+
+.news__hover
+    position absolute
+    top 0
+    left 0
+    z-index $z-index7
+    display none
+    width 100%
+    height 100%
+    justify-content center
+    align-items center
+    background-color rgba(blueColor,.9)
+    &::after
+        position absolute
+        top 2.5%
+        left 2.5%
+        z-index -1
+        width 95%
+        height 95%
+        border 5px solid whiteColor
+        content ''
+    a
+        font 14px / 32px baseFont2
+        text-transform uppercase
+        color rgba(whiteColor,.9)
+        &:hover
+            color whiteColor
+
+.news__cont
+    padding 0 36px
+
+.news__news:hover
+    .news__hover
+        display flex
+        &::after
+            display block
+    h3
+        color blueColor
+
 @import 'components/_header.styl'
 @import 'components/_nav.styl'
 @import 'components/_footer.styl'
