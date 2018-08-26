@@ -25,6 +25,61 @@
 .intro__pic
     margin-bottom 24px
 
+.brand
+    padding 150px 0
+
+.brand__figure
+    margin-bottom 110px
+    text-align center
+
+.brand__rows
+    margin-bottom 100px
+
+.brand__rows
+    & > .brand__row
+        display flex
+        justify-content center
+        &:not(:last-child)
+            margin-bottom 30px
+        & > .brand__col
+            flex 1 0 271px
+            &:not(:last-child)
+                margin-right 30px
+
+.brand__col
+    flex 1 0 271px
+    padding-top 160px
+    &:not(:last-child)
+        margin-right 30px
+
+.brand__brand
+    position relative
+    z-index $z-index9
+
+.brand__link,
+.brand__img
+    position absolute
+    top 0 
+    left 0
+    width 100%
+    height 100%
+
+.brand__link
+    bg = #f3f3f4
+
+    z-index $z-index7
+    display block
+    background-color bg
+    border 1px solid bg
+
+.brand__img
+    z-index $z-index8
+    object-fit none
+
+.brand__link:hover
+    background-color whiteColor
+    border 1px solid blackColor 
+
 .news__inner
     padding 152px 0 
 
@@ -44,9 +99,11 @@
 .news__rows
     & > .news__row
         display flex
+        justify-content center
         &:not(:last-child)
             margin-bottom 72px
         & > .news__col
+            flex 1 0 271px
             &:not(:last-child)
                 margin-right 30px
 
@@ -112,6 +169,8 @@
             display block
     h3
         color blueColor
+
+@import 'components/_carousel.styl';
 
 @import 'components/_header.styl'
 @import 'components/_nav.styl'

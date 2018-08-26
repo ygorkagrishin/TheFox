@@ -1,0 +1,56 @@
+.caro
+    max-width 970px
+    margin 0 auto
+    overflow hidden
+
+.caro__wrap
+    display flex
+
+.caro__slide
+    fontName = 'merriweather-bolditalic', sans-serif, arial
+
+    flex 1 0 100%
+    text-align center
+    p
+        font 30px / 50px fontName
+        color greyColor
+    span 
+        text-transform uppercase
+        color blackColor
+
+.caro__quot
+    width 70px
+    height 70px
+    margin 0 auto
+    line-height 75px
+    background-color blueColor
+    border-radius 50%
+
+.caro__quot-img
+    object-fit none
+
+.caro__text
+    margin 70px 0 60px 0
+
+.caro__nav
+    padding-top 70px
+    text-align center
+    & > li
+        display inline-block
+        width 8px
+        height 8px
+        vertical-align middle
+        &:not(:last-child)
+            margin-right 12px
+
+.caro__dot
+    display block
+    width 6px
+    height 6px
+    margin 0 auto
+    background-color greyColor
+    border-radius 50%
+    &.active
+        width 100%
+        height 100%
+        background-color blackColor
