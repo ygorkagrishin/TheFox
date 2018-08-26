@@ -505,6 +505,40 @@ svg {
 .news__news:hover h3 {
   color: #92cdcf;
 }
+.sign__inner {
+  padding: 150px 0;
+}
+.sign__title {
+  font: 32px/1 'merriweather-bold', sans-serif, arial;
+  text-transform: inherit;
+  text-align: center;
+  color: #202121;
+}
+.sign__form {
+  max-width: 430px;
+  margin: 100px auto;
+  text-align: center;
+}
+.sign__input {
+  width: 100%;
+  padding: 30px;
+  font: 14px/30px 'montserrat-bold', sans-serif, arial;
+  text-align: center;
+  color: #202121;
+  border-bottom: 1px solid #202121;
+}
+.sign__input::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+.sign__input::-moz-placeholder {
+  text-transform: uppercase;
+}
+.sign__input:-moz-placeholder {
+  text-transform: uppercase;
+}
+.sign__input:-ms-input-placeholder {
+  text-transform: uppercase;
+}
 .caro {
   max-width: 970px;
   margin: 0 auto;
@@ -569,6 +603,23 @@ svg {
   width: 100%;
   height: 100%;
   background-color: #202121;
+}
+.social {
+  text-align: center;
+}
+.social__item {
+  display: inline-block;
+}
+.social__item:not(:last-child) {
+  margin-right: 53px;
+}
+.social__link {
+  font: 10px/1 'montserrat-bold', sans-serif, arial;
+  text-transform: uppercase;
+  color: rgba(146,205,207,0.7);
+}
+.social__link:hover {
+  color: #92cdcf;
 }
 
 /*# sourceMappingURL=styles.min.css.map */

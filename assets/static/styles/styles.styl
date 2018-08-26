@@ -117,8 +117,8 @@
     h3
         margin-bottom 12px
         font 18px / 31px baseTitleFont2
-        color blackColor
-//TODO: Незабыть перевести padding в проценты
+        color blackColor 
+
 .news__pic
     position relative
     z-index $z-index9
@@ -170,7 +170,38 @@
     h3
         color blueColor
 
+.sign__inner
+    padding 150px 0
+
+.sign__title
+    font 32px / 1 baseTitleFont2
+    text-transform inherit
+    text-align center
+    color blackColor
+
+.sign__form
+    max-width 430px
+    margin 100px auto
+    text-align center
+
+.sign__input
+    width 100%
+    padding 30px
+    font 14px / 30px baseFont2
+    text-align center
+    color blackColor
+    border-bottom 1px solid blackColor
+    &::-webkit-input-placeholder
+        text-transform uppercase
+    &::-moz-placeholder
+        text-transform uppercase
+    &:-moz-placeholder
+        text-transform uppercase
+    &:-ms-input-placeholder
+        text-transform uppercase
+
 @import 'components/_carousel.styl';
+@import 'components/_social.styl';
 
 @import 'components/_header.styl'
 @import 'components/_nav.styl'
