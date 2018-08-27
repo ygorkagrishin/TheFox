@@ -80,20 +80,48 @@
     background-color whiteColor
     border 1px solid blackColor 
 
+.summ
+    background-color greyColor
+
+.summ__inner
+    padding 350px 0
+
+.summ__header
+    color whiteColor
+    img 
+        margin 20px 0
+
+.summ__title
+    font 100px / 1 mainTitleFont 
+
+.summ__row
+    display flex
+    justify-content flex-end
+
+.summ__col
+    padding-left 5%
+    flex-basis 50%
+
+.summ__text
+    padding-right 35%
+    color whiteColor
+
 .news__inner
     padding 152px 0 
+
+.news
+    text-align center
 
 .news__header
     max-width 680px
     margin 0 auto
     padding-bottom 100px
-    text-align center
     color blackColor
     img 
         margin 40px 0
         
-
 .news__rows
+    margin-bottom 72px
     & > .news__row
         display flex
         justify-content center
@@ -104,8 +132,7 @@
             &:not(:last-child)
                 margin-right 30px
 
-.news__news
-    text-align center
+.news__article
     cursor pointer
     span 
         font-size 12px
@@ -159,7 +186,7 @@
 .news__cont
     padding 0 36px
 
-.news__news:hover
+.news__article:hover
     .news__hover
         display flex
         &::after
@@ -178,6 +205,9 @@
     img 
         margin 20px 0
 
+.amaz__title
+    font 100px / 1 mainTitleFont
+
 .amaz__row
     display flex
 
@@ -186,6 +216,7 @@
     flex-basis 50%
 
 .amaz__text
+    margin-bottom 62px
     padding-right 35%
 
 .sign__inner
@@ -218,6 +249,7 @@
     &:-ms-input-placeholder
         text-transform uppercase
 
+@import 'components/_buttons.styl';
 @import 'components/_carousel.styl';
 @import 'components/_social.styl';
 

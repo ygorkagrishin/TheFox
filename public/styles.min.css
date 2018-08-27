@@ -391,18 +391,55 @@ svg {
   background-color: #fff;
   border: 1px solid #202121;
 }
+.summ {
+  background-color: #a7a7a7;
+}
+.summ__inner {
+  padding: 350px 0;
+}
+.summ__header {
+  color: #fff;
+}
+.summ__header img {
+  margin: 20px 0;
+}
+.summ__title {
+  font: 100px/1 'futuraptbold', sans-serif, arial;
+}
+.summ__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.summ__col {
+  padding-left: 5%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.summ__text {
+  padding-right: 35%;
+  color: #fff;
+}
 .news__inner {
   padding: 152px 0;
+}
+.news {
+  text-align: center;
 }
 .news__header {
   max-width: 680px;
   margin: 0 auto;
   padding-bottom: 100px;
-  text-align: center;
   color: #202121;
 }
 .news__header img {
   margin: 40px 0;
+}
+.news__rows {
+  margin-bottom: 72px;
 }
 .news__rows > .news__row {
   display: -webkit-box;
@@ -423,16 +460,15 @@ svg {
 .news__rows > .news__row > .news__col:not(:last-child) {
   margin-right: 30px;
 }
-.news__news {
-  text-align: center;
+.news__article {
   cursor: pointer;
 }
-.news__news span {
+.news__article span {
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
 }
-.news__news h3 {
+.news__article h3 {
   margin-bottom: 12px;
   font: 18px/31px 'merriweather-bold', sans-serif, arial;
   color: #202121;
@@ -489,15 +525,15 @@ svg {
 .news__cont {
   padding: 0 36px;
 }
-.news__news:hover .news__hover {
+.news__article:hover .news__hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.news__news:hover .news__hover::after {
+.news__article:hover .news__hover::after {
   display: block;
 }
-.news__news:hover h3 {
+.news__article:hover h3 {
   color: #92cdcf;
 }
 .amaz {
@@ -512,6 +548,9 @@ svg {
 .amaz__header img {
   margin: 20px 0;
 }
+.amaz__title {
+  font: 100px/1 'futuraptbold', sans-serif, arial;
+}
 .amaz__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,6 +562,7 @@ svg {
       flex-basis: 50%;
 }
 .amaz__text {
+  margin-bottom: 62px;
   padding-right: 35%;
 }
 .sign__inner {
@@ -558,6 +598,23 @@ svg {
 }
 .sign__input:-ms-input-placeholder {
   text-transform: uppercase;
+}
+.btn {
+  display: inline-block;
+  height: 58px;
+  padding: 0 44px;
+  font: 13px/56px 'montserrat-bold', sans-serif, arial;
+  text-transform: uppercase;
+  color: #202121;
+  border: 2px solid #202121;
+}
+.btn_type_black {
+  color: #fff;
+  background-color: #202121;
+}
+.btn_type_transparent {
+  color: #202121;
+  background-color: transparent;
 }
 .caro {
   max-width: 970px;
