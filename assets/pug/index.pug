@@ -115,7 +115,40 @@ block content
 
                     .caro#carousel
                         .caro__wrap
-                            .caro__slide
+                            .caro__slide(data-slide="1")
+                                .caro__quot
+                                    img(src="img/general/quot.png", alt="quotation pic").caro__quot-img
+
+                                .caro__text
+                                    p
+                                        | No doubt, it's truly multi-purpose, even header and footer changed
+                                        | based on layout type, like portfolio, shot etc. Simply love it !
+                                span.caro__name.nb
+                                    | - paktemplates -
+                            
+                            .caro__slide(data-slide="2")
+                                .caro__quot
+                                    img(src="img/general/quot.png", alt="quotation pic").caro__quot-img
+
+                                .caro__text
+                                    p
+                                        | No doubt, it's truly multi-purpose, even header and footer changed
+                                        | based on layout type, like portfolio, shot etc. Simply love it !
+                                span.caro__name.nb
+                                    | - paktemplates -
+
+                            .caro__slide(data-slide="3")
+                                .caro__quot
+                                    img(src="img/general/quot.png", alt="quotation pic").caro__quot-img
+
+                                .caro__text
+                                    p
+                                        | No doubt, it's truly multi-purpose, even header and footer changed
+                                        | based on layout type, like portfolio, shot etc. Simply love it !
+                                span.caro__name.nb
+                                    | - paktemplates -
+
+                            .caro__slide(data-slide="4")
                                 .caro__quot
                                     img(src="img/general/quot.png", alt="quotation pic").caro__quot-img
 
@@ -128,22 +161,22 @@ block content
                         ul.caro__nav
                             //- #1
                             li
-                                button(type="button").caro__dot
+                                button(type="button", data-target-slide="1").caro__dot
                             //- #1 end
 
                             //- #2
                             li
-                                button(type="button").caro__dot
+                                button(type="button", data-target-slide="2").caro__dot
                             //- #2 end
 
                             //- #3
                             li
-                                button(type="button").caro__dot
+                                button(type="button", data-target-slide="3").caro__dot
                             //- #3 end
 
                             //- #4
                             li
-                                button(type="button").caro__dot
+                                button(type="button", data-target-slide="4").caro__dot
                             //- #4 end
 
         section.sect.news
@@ -253,6 +286,22 @@ block content
                                         | Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             //- #3 end
                         //- News row-2 end
+
+        section.sect.amaz
+            .amaz__inner
+                .container
+                    .amaz__row
+                        .amaz__col
+                            .amaz__header
+                                h2.amaz__title.sect__title Amazing
+                                p Chapter 2.
+                                img(src="img/general/rectangle22.png", alt="figure pic")
+                            .amaz__text
+                                p.nb
+                                    | Lorem ipsum dolor sit amet, consectetur
+                                    | isicing elit, sed do eiusmod tempor 
+                                    | incididunt ut labore et dolore magna aliqua. 
+                                    | Ut enim ad minim veniam, quis nostrud exercitation ullamco 
 
         section.sect.sign
             .sign__inner

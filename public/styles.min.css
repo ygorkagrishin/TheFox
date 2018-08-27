@@ -399,15 +399,10 @@ svg {
   margin: 0 auto;
   padding-bottom: 100px;
   text-align: center;
+  color: #202121;
 }
 .news__header img {
   margin: 40px 0;
-}
-.news__title {
-  color: #202121;
-}
-.news__title + p {
-  color: #202121;
 }
 .news__rows > .news__row {
   display: -webkit-box;
@@ -504,6 +499,31 @@ svg {
 }
 .news__news:hover h3 {
   color: #92cdcf;
+}
+.amaz {
+  background: url("img/content/amazing/1.png") no-repeat center/cover;
+}
+.amaz__inner {
+  padding: 300px 0;
+}
+.amaz__header {
+  color: #202121;
+}
+.amaz__header img {
+  margin: 20px 0;
+}
+.amaz__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.amaz__col {
+  padding-right: 5%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.amaz__text {
+  padding-right: 35%;
 }
 .sign__inner {
   padding: 150px 0;
