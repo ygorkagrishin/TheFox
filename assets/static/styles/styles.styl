@@ -6,6 +6,33 @@
 
 @import 'layout/_layout.styl'
 
+.hero
+    position relative
+    z-index $z-index9
+    height 100vh
+    background-color blueColor
+
+.hero__bottom
+    position absolute
+    left 0
+    bottom 0
+    z-index $z-index8
+    width 100%
+    padding 45px 0
+    background-color rgba(blackColor,.5)
+    .container
+        display flex
+        align-items center
+        justify-content space-between
+    .nb
+        font-size 20px
+        line-height 1
+        text-transform uppercase
+        color whiteColor
+    .hero__btn
+        color whiteColor
+        border-color whiteColor
+
 .intro__list
     display flex
     justify-content space-between
@@ -24,6 +51,36 @@
 
 .intro__pic
     margin-bottom 24px
+
+.promo__inner
+    padding 265px 0 785px 0
+
+.promo__row
+    display flex
+    & > .promo__col
+        flex-basis 50%
+        padding-left 175px
+
+.promo__title
+    color blackColor
+    span 
+        font 90px / 1 baseTitleFont2
+        color darkColor
+    & + p
+        text-align right
+        color blackColor
+
+.promo__graphic
+    position absolute
+    z-index -1
+    top 0
+    &-1
+        top 5%
+        left 0
+        width 34%
+    &-2
+        right 0
+        width 60%
 
 .brand
     padding 150px 0
@@ -48,13 +105,13 @@
 
 .brand__col
     flex 1 0 271px
-    padding-top 160px
     &:not(:last-child)
         margin-right 30px
 
 .brand__brand
     position relative
     z-index $z-index9
+    padding-top 160px
 
 .brand__link,
 .brand__img
@@ -81,7 +138,7 @@
     border 1px solid blackColor 
 
 .summ
-    background-color greyColor
+    background greyColor url('img/content/summer/photo-1444401045234-4a2ab1f645c01.png') no-repeat center / cover
 
 .summ__inner
     padding 350px 0
@@ -249,6 +306,8 @@
     &:-ms-input-placeholder
         text-transform uppercase
 
+@import 'components/_logo.styl';
+@import 'components/_toggle.styl';
 @import 'components/_buttons.styl';
 @import 'components/_carousel.styl';
 @import 'components/_social.styl';

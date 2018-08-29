@@ -299,6 +299,42 @@ svg {
   border: none;
   overflow: hidden;
 }
+.hero {
+  position: relative;
+  z-index: 9;
+  height: 100vh;
+  background-color: #92cdcf;
+}
+.hero__bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 45px 0;
+  background-color: rgba(32,33,33,0.5);
+}
+.hero__bottom .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hero__bottom .nb {
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+}
+.hero__bottom .hero__btn {
+  color: #fff;
+  border-color: #fff;
+}
 .intro__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +361,44 @@ svg {
 }
 .intro__pic {
   margin-bottom: 24px;
+}
+.promo__inner {
+  padding: 265px 0 785px 0;
+}
+.promo__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.promo__row > .promo__col {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 175px;
+}
+.promo__title {
+  color: #202121;
+}
+.promo__title span {
+  font: 90px/1 'merriweather-bold', sans-serif, arial;
+  color: #000;
+}
+.promo__title + p {
+  text-align: right;
+  color: #202121;
+}
+.promo__graphic {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+.promo__graphic-1 {
+  top: 5%;
+  left: 0;
+  width: 34%;
+}
+.promo__graphic-2 {
+  right: 0;
+  width: 60%;
 }
 .brand {
   padding: 150px 0;
@@ -359,7 +433,6 @@ svg {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 271px;
           flex: 1 0 271px;
-  padding-top: 160px;
 }
 .brand__col:not(:last-child) {
   margin-right: 30px;
@@ -367,6 +440,7 @@ svg {
 .brand__brand {
   position: relative;
   z-index: 9;
+  padding-top: 160px;
 }
 .brand__link,
 .brand__img {
@@ -392,7 +466,7 @@ svg {
   border: 1px solid #202121;
 }
 .summ {
-  background-color: #a7a7a7;
+  background: #a7a7a7 url("img/content/summer/photo-1444401045234-4a2ab1f645c01.png") no-repeat center/cover;
 }
 .summ__inner {
   padding: 350px 0;
@@ -599,6 +673,35 @@ svg {
 .sign__input:-ms-input-placeholder {
   text-transform: uppercase;
 }
+.logo {
+  font-family: 'lato-ragular', sans-serif, arial;
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+}
+.logo span {
+  font-family: 'lato-regular', sans-serif, arial;
+}
+.logo img {
+  margin-right: 14px;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 20px;
+  margin: 50px;
+  cursor: pointer;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  height: 3px;
+  background-color: #fff;
+}
+.navbar-toggle .icon-bar:not(:last-child) {
+  margin-bottom: 3px;
+}
 .btn {
   display: inline-block;
   height: 58px;
@@ -697,6 +800,27 @@ svg {
 }
 .social__link:hover {
   color: #92cdcf;
+}
+.header__logo {
+  margin-bottom: 32px;
+}
+.header__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 50px;
+}
+.mainnav li:last-child {
+  margin-top: 50px;
+}
+.mainnav a {
+  font: 16px/36px 'montserrat-bold', sans-serif, arial;
+  text-transform: uppercase;
+  color: #fff;
+}
+.mainnav a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.min.css.map */

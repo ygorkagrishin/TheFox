@@ -5,6 +5,89 @@ block title
 
 block content 
     main.page__main
+        //- section hero
+        section.sect.hero
+            
+            header.header
+                button(type="button").navbar-toggle.header__toggle
+                    span.visually-hidden Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                //- mainnav
+                .header__nav
+                    h2.header__logo.logo
+                        img(src="img/general/logo.png", alt="logo pic")
+                        span the
+                        | fox
+                    nav.mainnav
+                        ul
+                            li
+                                a(href="javascript:void(0);") New In
+                            li
+                                a(href="javascript:void(0);") Woman                   
+                            li
+                                a(href="javascript:void(0);") Trf
+                            li
+                                a(href="javascript:void(0);") Man
+                            li
+                                a(href="javascript:void(0);") Kids
+                            li
+                                a(href="javascript:void(0);") Editorials
+                            li
+                                a(href="javascript:void(0);") Sale
+                //- mainnav end
+
+            .container
+                .hero__slider#slider
+                    .hero__wrap
+                        //- slide-1
+                        .hero__slide
+
+                        //- slide-1 end
+
+                        //- slide-1
+                        .hero__slide
+
+                        //- slide-2 end
+
+                        //- slide-3
+                        .hero__slide
+
+                        //- slide-3 end
+
+                        //- slide-4
+                        .hero__slide
+
+                        //- slide-4 end
+
+                        //- slide-5
+                        .hero__slide
+
+                        //- slide-5 end
+
+                        //- slide-6
+                        .hero__slide
+
+                        //- slide-6 end
+
+                        //- slide-7
+                        .hero__slide
+
+                        //- slide-7 end
+
+            //- bottom pannel
+            .hero__bottom
+                .container
+                    p.nb
+                        | Get thefox SPECIAL today, this will save many time for your project.
+
+                    a(href="javascript:void(0);").btn.btn_type_transparent.hero__btn.hero__download Download Now
+            //- bottom pannel end
+
+        //- section hero end
+
+        //- section intro
         section.sect.intro
             h2.visually-hidden Intro
 
@@ -53,7 +136,23 @@ block content
                             | Consectetur adipisicing elitsed do eiusmod tempor incidid
                             | labore et dolore magna aliqua.
                     //- #4 end
+        //- section intro end
 
+        //- section promo
+        section.sect.promo
+            .promo__inner
+                .container
+                    .promo__row
+                        .promo__col
+                            h2.promo__title.sect__title 
+                                span spring <br>
+                                | summer
+                            p / Chapter 1.
+            img(src="img/content/promo/5431074400_1_1_1.png", alt="promo first pic").promo__graphic.promo__graphic-1
+            img(src="img/content/promo/4876045251_2_2_1.png", alt="promo second pic").promo__graphic.promo__graphic-2
+        //- section promo end
+
+        //- section brand
         section.sect.brand
             .brand__inner
                 .container
@@ -65,52 +164,60 @@ block content
                     .brand__rows
                         .brand__row
                             //- #1
-                            .brand__col.brand__brand
-                                a(href="javascript:void(0);").brand__link
-                                    img(src="img/content/brand/1.png", alt="brand pic").brand__img
+                            .brand__col
+                                .brand__brand
+                                    a(href="javascript:void(0);").brand__link
+                                        img(src="img/content/brand/1.png", alt="brand pic").brand__img
                             //- #1end
 
                             //- #2
-                            .brand__col.brand__brand
-                                a(href="javascript:void(0);").brand__link
-                                    img(src="img/content/brand/2.png", alt="brand pic").brand__img
+                            .brand__col
+                                .brand__brand
+                                    a(href="javascript:void(0);").brand__link
+                                        img(src="img/content/brand/2.png", alt="brand pic").brand__img
                             //- #2end
                             
                             //- #3
-                            .brand__col.brand__brand
-                                a(href="javascript:void(0);").brand__link
-                                    img(src="img/content/brand/3.png", alt="brand pic").brand__img
+                            .brand__col
+                                .brand__brand
+                                    a(href="javascript:void(0);").brand__link
+                                        img(src="img/content/brand/3.png", alt="brand pic").brand__img
                             //- #3end
                             
                             //- #4
-                            .brand__col.brand__brand
-                                a(href="javascript:void(0);").brand__link
-                                    img(src="img/content/brand/4.png", alt="brand pic").brand__img
+                            .brand__col
+                                .brand__brand
+                                    a(href="javascript:void(0);").brand__link
+                                        img(src="img/content/brand/4.png", alt="brand pic").brand__img
                             //- #4end
                             
                         .brand__row
                             //- #1
-                            .brand__col.brand__brand
-                                a(href="javascript:void(0);").brand__link
-                                    img(src="img/content/brand/5.png", alt="brand pic").brand__img
+                            .brand__col
+                                .brand__brand
+                                    a(href="javascript:void(0);").brand__link
+                                        img(src="img/content/brand/5.png", alt="brand pic").brand__img
                             //- #1end
                             
                             //- #2
-                            .brand__col.brand__brand
-                                a(href="javascript:void(0);").brand__link
-                                    img(src="img/content/brand/6.png", alt="brand pic").brand__img
+                            .brand__col
+                                .brand__brand
+                                    a(href="javascript:void(0);").brand__link
+                                        img(src="img/content/brand/6.png", alt="brand pic").brand__img
                             //- #2end
                             
                             //- #3
-                            .brand__col.brand__brand
-                                a(href="javascript:void(0);").brand__link
-                                    img(src="img/content/brand/7.png", alt="brand pic").brand__img
+                            .brand__col
+                                .brand__brand
+                                    a(href="javascript:void(0);").brand__link
+                                        img(src="img/content/brand/7.png", alt="brand pic").brand__img
                             //- #3end
                             
                             //- #4
-                            .brand__col.brand__brand
-                                a(href="javascript:void(0);").brand__link
-                                    img(src="img/content/brand/8.png", alt="brand pic").brand__img
+                            .brand__col
+                                .brand__brand
+                                    a(href="javascript:void(0);").brand__link
+                                        img(src="img/content/brand/8.png", alt="brand pic").brand__img
                             //- #4end
 
                     .caro#carousel
@@ -178,7 +285,9 @@ block content
                             li
                                 button(type="button", data-target-slide="4").caro__dot
                             //- #4 end
+        //- section brand end
 
+        //- section summ
         section.sect.summ
             .summ__inner
                 .container
@@ -194,7 +303,9 @@ block content
                                     | isicing elit, sed do eiusmod tempor 
                                     | incididunt ut labore et dolore magna aliqua. 
                                     | Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        //- section summ end
 
+        //- section news
         section.sect.news
             .news__inner    
                 .container
@@ -309,7 +420,9 @@ block content
                             //- #3 end
                         //- News row-2 end
                     a(href="javascript:void(0);").btn.btn_type_transparent View All Articles
+        //- section news end
 
+        //- section amaz
         section.sect.amaz
             .amaz__inner
                 .container
@@ -317,7 +430,7 @@ block content
                         .amaz__col
                             .amaz__header
                                 h2.amaz__title.sect__title Amazing
-                                p Chapter 2.
+                                p Chapter 3.
                                 img(src="img/general/rectangle22.png", alt="figure pic")
                             .amaz__text
                                 p.nb
@@ -326,7 +439,9 @@ block content
                                     | incididunt ut labore et dolore magna aliqua. 
                                     | Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                             a(href="javascript:void(0);").btn.btn_type_black Check Our Style
+        //- section amaz end 
 
+        //- section sign
         section.sect.sign
             .sign__inner
                 .container
@@ -345,3 +460,4 @@ block content
                                     a(href="javascript:void(0);").social__link Facebook
                                 li.social__item
                                     a(href="javascript:void(0);").social__link Twitter
+        //- section sign end
