@@ -255,14 +255,6 @@ svg {
 ::-ms-clear {
   display: none;
 }
-::-moz-selection {
-  color: #fff;
-  background-color: inherit;
-}
-::selection {
-  color: #fff;
-  background-color: inherit;
-}
 *,
 *::before,
 *::after {
@@ -281,10 +273,11 @@ svg {
   margin: 0 auto;
 }
 .sect__title {
-  font: 100px/1 'montserrat-bold', sans-serif, arial;
+  font: 100px/1 'futuraptbold', sans-serif, arial;
   text-transform: uppercase;
 }
 .sect__title + p {
+  margin-top: 16px;
   font: 33px/1 'merriweather-bold', sans-serif, arial;
 }
 .nb {
@@ -304,6 +297,40 @@ svg {
   z-index: 9;
   height: 100vh;
   background-color: #92cdcf;
+}
+.hero__slider {
+  overflow: hidden;
+}
+.hero__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero__slide {
+  height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  text-align: center;
+}
+.hero__slide .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero__slide h3 {
+  margin: 24px 0;
+  font: 36px/1 'futuraptbold', sans-serif, arial;
+  letter-spacing: 7.6px;
+  text-transform: uppercase;
+  color: #fff;
 }
 .hero__bottom {
   position: absolute;
@@ -326,8 +353,9 @@ svg {
           justify-content: space-between;
 }
 .hero__bottom .nb {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1;
+  letter-spacing: 0.2px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -342,13 +370,13 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 150px 0;
+  padding: 152px 0 144px 0;
 }
 .intro__item {
   padding: 0 30px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 270px;
-          flex: 1 0 270px;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
 }
 .intro__item:not(:last-child) {
@@ -360,10 +388,10 @@ svg {
   color: #202121;
 }
 .intro__pic {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 .promo__inner {
-  padding: 265px 0 785px 0;
+  padding: 254px 0 785px 0;
 }
 .promo__row {
   display: -webkit-box;
@@ -376,13 +404,19 @@ svg {
   padding-left: 175px;
 }
 .promo__title {
+  font: 90px/84px 'merriweather-bold', sans-serif, arial;
+  letter-spacing: 9px;
   color: #202121;
 }
 .promo__title span {
-  font: 90px/1 'merriweather-bold', sans-serif, arial;
+  display: inline-block;
+  margin-left: 95px;
+  font: 90px/1 'futuraptbold', sans-serif, arial;
   color: #000;
 }
 .promo__title + p {
+  margin-top: 16px;
+  letter-spacing: 2px;
   text-align: right;
   color: #202121;
 }
@@ -392,19 +426,19 @@ svg {
   top: 0;
 }
 .promo__graphic-1 {
-  top: 5%;
-  left: 0;
-  width: 34%;
+  top: 7%;
+  left: 5%;
+  width: 30%;
 }
 .promo__graphic-2 {
-  right: 0;
-  width: 60%;
+  right: 5.5%;
+  width: 54%;
 }
 .brand {
-  padding: 150px 0;
+  padding: 158px 0 143px 0;
 }
 .brand__figure {
-  margin-bottom: 110px;
+  margin-bottom: 102px;
   text-align: center;
 }
 .brand__rows {
@@ -469,16 +503,13 @@ svg {
   background: #a7a7a7 url("img/content/summer/photo-1444401045234-4a2ab1f645c01.png") no-repeat center/cover;
 }
 .summ__inner {
-  padding: 350px 0;
+  padding: 362px 0 386px 0;
 }
 .summ__header {
   color: #fff;
 }
 .summ__header img {
-  margin: 20px 0;
-}
-.summ__title {
-  font: 100px/1 'futuraptbold', sans-serif, arial;
+  margin: 33px 0 26px 0;
 }
 .summ__row {
   display: -webkit-box;
@@ -489,16 +520,16 @@ svg {
           justify-content: flex-end;
 }
 .summ__col {
-  padding-left: 5%;
+  padding-left: 12%;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
 .summ__text {
-  padding-right: 35%;
+  padding-right: 8%;
   color: #fff;
 }
 .news__inner {
-  padding: 152px 0;
+  padding: 136px 0 152px 0;
 }
 .news {
   text-align: center;
@@ -510,10 +541,10 @@ svg {
   color: #202121;
 }
 .news__header img {
-  margin: 40px 0;
+  margin: 32px 0 24px 0;
 }
 .news__rows {
-  margin-bottom: 72px;
+  margin-bottom: 68px;
 }
 .news__rows > .news__row {
   display: -webkit-box;
@@ -524,7 +555,7 @@ svg {
           justify-content: center;
 }
 .news__rows > .news__row:not(:last-child) {
-  margin-bottom: 72px;
+  margin-bottom: 65px;
 }
 .news__rows > .news__row > .news__col {
   -webkit-box-flex: 1;
@@ -543,14 +574,14 @@ svg {
   text-transform: uppercase;
 }
 .news__article h3 {
-  margin-bottom: 12px;
+  margin: 8px 0 16px 0;
   font: 18px/31px 'merriweather-bold', sans-serif, arial;
   color: #202121;
 }
 .news__pic {
   position: relative;
   z-index: 9;
-  margin-bottom: 28px;
+  margin-bottom: 33px;
   padding-top: 300px;
 }
 .news__pic > img {
@@ -597,7 +628,7 @@ svg {
   color: #fff;
 }
 .news__cont {
-  padding: 0 36px;
+  padding: 0 30px;
 }
 .news__article:hover .news__hover {
   display: -webkit-box;
@@ -614,16 +645,13 @@ svg {
   background: url("img/content/amazing/1.png") no-repeat center/cover;
 }
 .amaz__inner {
-  padding: 300px 0;
+  padding: 300px 0 317px 0;
 }
 .amaz__header {
   color: #202121;
 }
 .amaz__header img {
-  margin: 20px 0;
-}
-.amaz__title {
-  font: 100px/1 'futuraptbold', sans-serif, arial;
+  margin: 29px 0;
 }
 .amaz__row {
   display: -webkit-box;
@@ -636,21 +664,22 @@ svg {
       flex-basis: 50%;
 }
 .amaz__text {
-  margin-bottom: 62px;
-  padding-right: 35%;
+  margin-bottom: 68px;
+  padding-right: 22%;
 }
 .sign__inner {
-  padding: 150px 0;
+  padding: 150px 0 146px 0;
 }
 .sign__title {
   font: 32px/1 'merriweather-bold', sans-serif, arial;
+  letter-spacing: 2px;
   text-transform: inherit;
   text-align: center;
   color: #202121;
 }
 .sign__form {
   max-width: 430px;
-  margin: 100px auto;
+  margin: 67px auto 75px auto;
   text-align: center;
 }
 .sign__input {
@@ -704,8 +733,8 @@ svg {
 }
 .btn {
   display: inline-block;
-  height: 58px;
-  padding: 0 44px;
+  height: 60px;
+  padding: 0 50px;
   font: 13px/56px 'montserrat-bold', sans-serif, arial;
   text-transform: uppercase;
   color: #202121;
@@ -740,6 +769,7 @@ svg {
   color: #a7a7a7;
 }
 .caro__slide span {
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: #202121;
 }
@@ -756,10 +786,10 @@ svg {
      object-fit: none;
 }
 .caro__text {
-  margin: 70px 0 60px 0;
+  margin: 53px 0 36px 0;
 }
 .caro__nav {
-  padding-top: 70px;
+  padding-top: 52px;
   text-align: center;
 }
 .caro__nav > li {
@@ -807,7 +837,7 @@ svg {
 .header__nav {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   z-index: 99;
   padding: 50px;
 }

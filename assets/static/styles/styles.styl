@@ -12,6 +12,28 @@
     height 100vh
     background-color blueColor
 
+.hero__slider
+    overflow hidden
+
+.hero__wrap
+    display flex
+
+.hero__slide
+    height 100vh
+    flex 1 0 100%
+    text-align center
+    .container
+        display flex
+        height inherit
+        align-items center
+        justify-content center
+    h3
+        margin 24px 0
+        font 36px / 1 mainTitleFont
+        letter-spacing 7.6px
+        text-transform uppercase
+        color whiteColor
+
 .hero__bottom
     position absolute
     left 0
@@ -25,8 +47,9 @@
         align-items center
         justify-content space-between
     .nb
-        font-size 20px
+        font-size 19px
         line-height 1
+        letter-spacing .2px
         text-transform uppercase
         color whiteColor
     .hero__btn
@@ -36,11 +59,11 @@
 .intro__list
     display flex
     justify-content space-between
-    padding 150px 0
+    padding 152px 0 144px 0
 
 .intro__item
     padding 0 30px
-    flex 1 0 270px
+    flex 1
     text-align center
     &:not(:last-child)
         margin-right 30px
@@ -50,10 +73,10 @@
         color blackColor
 
 .intro__pic
-    margin-bottom 24px
+    margin-bottom 40px
 
 .promo__inner
-    padding 265px 0 785px 0
+    padding 254px 0 785px 0
 
 .promo__row
     display flex
@@ -62,11 +85,17 @@
         padding-left 175px
 
 .promo__title
+    font 90px / 84px baseTitleFont2
+    letter-spacing 9px
     color blackColor
     span 
-        font 90px / 1 baseTitleFont2
+        display inline-block
+        margin-left 95px
+        font 90px / 1 mainTitleFont
         color darkColor
     & + p
+        margin-top 16px
+        letter-spacing 2px
         text-align right
         color blackColor
 
@@ -75,18 +104,18 @@
     z-index -1
     top 0
     &-1
-        top 5%
-        left 0
-        width 34%
+        top 7%
+        left 5%
+        width 30%
     &-2
-        right 0
-        width 60%
+        right 5.5%
+        width 54%
 
 .brand
-    padding 150px 0
+    padding 158px 0 143px 0
 
 .brand__figure
-    margin-bottom 110px
+    margin-bottom 102px
     text-align center
 
 .brand__rows
@@ -141,30 +170,27 @@
     background greyColor url('img/content/summer/photo-1444401045234-4a2ab1f645c01.png') no-repeat center / cover
 
 .summ__inner
-    padding 350px 0
+    padding 362px 0 386px 0
 
 .summ__header
     color whiteColor
     img 
-        margin 20px 0
-
-.summ__title
-    font 100px / 1 mainTitleFont 
+        margin 33px 0 26px 0
 
 .summ__row
     display flex
     justify-content flex-end
 
 .summ__col
-    padding-left 5%
+    padding-left 12%
     flex-basis 50%
 
 .summ__text
-    padding-right 35%
+    padding-right 8%
     color whiteColor
 
 .news__inner
-    padding 152px 0 
+    padding 136px 0 152px 0
 
 .news
     text-align center
@@ -175,15 +201,15 @@
     padding-bottom 100px
     color blackColor
     img 
-        margin 40px 0
+        margin 32px 0 24px 0
         
 .news__rows
-    margin-bottom 72px
+    margin-bottom 68px
     & > .news__row
         display flex
         justify-content center
         &:not(:last-child)
-            margin-bottom 72px
+            margin-bottom 65px
         & > .news__col
             flex 1 0 271px
             &:not(:last-child)
@@ -196,14 +222,14 @@
         line-height 14px
         text-transform uppercase
     h3
-        margin-bottom 12px
+        margin 8px 0 16px 0
         font 18px / 31px baseTitleFont2
         color blackColor 
 
 .news__pic
     position relative
     z-index $z-index9
-    margin-bottom 28px
+    margin-bottom 33px
     padding-top 300px
     & > img 
         position absolute
@@ -241,7 +267,7 @@
             color whiteColor
 
 .news__cont
-    padding 0 36px
+    padding 0 30px
 
 .news__article:hover
     .news__hover
@@ -255,15 +281,12 @@
     background url('img/content/amazing/1.png') no-repeat center / cover
 
 .amaz__inner
-    padding 300px 0
+    padding 300px 0 317px 0
 
 .amaz__header
     color blackColor
     img 
-        margin 20px 0
-
-.amaz__title
-    font 100px / 1 mainTitleFont
+        margin 29px 0
 
 .amaz__row
     display flex
@@ -273,21 +296,22 @@
     flex-basis 50%
 
 .amaz__text
-    margin-bottom 62px
-    padding-right 35%
+    margin-bottom 68px
+    padding-right 22%
 
 .sign__inner
-    padding 150px 0
+    padding 150px 0 146px 0
 
 .sign__title
     font 32px / 1 baseTitleFont2
+    letter-spacing 2px
     text-transform inherit
     text-align center
     color blackColor
 
 .sign__form
     max-width 430px
-    margin 100px auto
+    margin 67px auto 75px auto
     text-align center
 
 .sign__input

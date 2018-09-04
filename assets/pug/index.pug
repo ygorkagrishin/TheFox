@@ -9,11 +9,14 @@ block content
         section.sect.hero
             
             header.header
+                //- toggle
                 button(type="button").navbar-toggle.header__toggle
                     span.visually-hidden Toggle navigation
                     span.icon-bar
                     span.icon-bar
                     span.icon-bar
+                //- toggle end
+
                 //- mainnav
                 .header__nav
                     h2.header__logo.logo
@@ -38,43 +41,55 @@ block content
                                 a(href="javascript:void(0);") Sale
                 //- mainnav end
 
-            .container
-                .hero__slider#slider
-                    .hero__wrap
-                        //- slide-1
-                        .hero__slide
+            .hero__slider#slider
+                .hero__wrap
+                    //- slide-1
+                    .hero__slide(style="background: url('img/content/hero/photo-1433245437947-a0595ee871181.png') no-repeat center / cover")
+                        .container
+                            .hero__slide-cont
+                                img(src="img/content/hero/fashion.png", alt="pic").hero__slide-main-img
+                                h3
+                                    | The summer is coming
+                                img(src="img/general/line.png", alt="pic")
 
-                        //- slide-1 end
+                    //- slide-1 end
 
-                        //- slide-1
-                        .hero__slide
+                    //- slide-1
+                    .hero__slide
+                        .container
+                            .hero__slide-cont
+                                
+                    //- slide-2 end
 
-                        //- slide-2 end
+                    //- slide-3
+                    .hero__slide
+                        .container
+                            .hero__slide-cont
+                    //- slide-3 end
 
-                        //- slide-3
-                        .hero__slide
+                    //- slide-4
+                    .hero__slide
+                        .container
+                            .hero__slide-cont
+                    //- slide-4 end
+                        .container
+                    //- slide-5
+                    .hero__slide
+                        .container
+                            .hero__slide-cont
+                    //- slide-5 end
+                        
+                    //- slide-6
+                    .hero__slide
+                        .container
+                            .hero__slide-cont
+                    //- slide-6 end
 
-                        //- slide-3 end
-
-                        //- slide-4
-                        .hero__slide
-
-                        //- slide-4 end
-
-                        //- slide-5
-                        .hero__slide
-
-                        //- slide-5 end
-
-                        //- slide-6
-                        .hero__slide
-
-                        //- slide-6 end
-
-                        //- slide-7
-                        .hero__slide
-
-                        //- slide-7 end
+                    //- slide-7
+                    .hero__slide
+                        .container
+                            .hero__slide-cont
+                    //- slide-7 end
 
             //- bottom pannel
             .hero__bottom
@@ -84,7 +99,6 @@ block content
 
                     a(href="javascript:void(0);").btn.btn_type_transparent.hero__btn.hero__download Download Now
             //- bottom pannel end
-
         //- section hero end
 
         //- section intro
@@ -145,8 +159,8 @@ block content
                     .promo__row
                         .promo__col
                             h2.promo__title.sect__title 
-                                span spring <br>
-                                | summer
+                                | spring <br>
+                                span summer
                             p / Chapter 1.
             img(src="img/content/promo/5431074400_1_1_1.png", alt="promo first pic").promo__graphic.promo__graphic-1
             img(src="img/content/promo/4876045251_2_2_1.png", alt="promo second pic").promo__graphic.promo__graphic-2
